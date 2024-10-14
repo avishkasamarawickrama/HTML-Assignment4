@@ -1,0 +1,88 @@
+     body {
+         margin: 0;
+         width: 400%;
+         height: 100vh;
+         overflow: hidden;
+     }
+
+     .img-container {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-direction: row;
+         animation: slider 27s ease infinite;
+     }
+
+     .flow {
+         width: 25%;
+         height: 100%;
+         background-size: cover;
+     }
+
+     #img-1 {
+         background-image: url(/images/image01.png);
+     }
+
+     #img-2 {
+         background-image: url(/images/image02.png);
+     }
+
+     #img-3 {
+         background-image: url(/images/image03.png);
+     }
+
+     #img-4 {
+         background-image: url(/images/image04.png);
+     }
+
+     @keyframes slider {
+
+         0%,
+         100% {
+             transform: translateX(0%);
+         }
+
+         8% {
+             transform: translateX(0%);
+         }
+
+         16% {
+             transform: translateX(-25%);
+         }
+
+         24% {
+             transform: translateX(-25%);
+         }
+
+         32% {
+             transform: translateX(-50%);
+         }
+
+         40% {
+             transform: translateX(-50%);
+         }
+
+         48% {
+             transform: translateX(-75%);
+         }
+
+         56% {
+             transform: translateX(-75%);
+         }
+
+         64% {
+             transform: translateX(-50%);
+         }
+
+         72% {
+             transform: translateX(-50%);
+         }
+
+         80% {
+             transform: translateX(-25%);
+         }
+
+         88% {
+             transform: translateX(-25%);
+         }
+     }

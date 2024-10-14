@@ -1,0 +1,78 @@
+   body {
+       margin: 0;
+       background-color: rgb(13, 13, 167);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+   }
+
+
+   .cir1 {
+       background-color: white;
+       height: 300px;
+       width: 300px;
+       border-radius: 50%;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+
+   .cir2 {
+       height: 150px;
+       width: 150px;
+       background-color: red;
+       position: absolute;
+
+       border-radius: 0 100% 0 0;
+       top: 0;
+       left: 50%;
+       transform: rotate(-45deg);
+
+       transform-origin: bottom left;
+   }
+
+
+   .cir3 {
+       height: 250px;
+       width: 250px;
+       background-color: gray;
+       border-radius: 50%;
+       position: absolute;
+       z-index: 1;
+       cursor: pointer;
+       top: 8%;
+       left: 8%;
+   }
+
+   p {
+       color: white;
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 24px;
+   }
+
+
+   .cir3:hover+.cir1 {
+       animation: rotate-circle 2s linear 1s;
+   }
+
+
+   @keyframes rotate-circle {
+       0% {
+           transform: rotate(0deg);
+       }
+
+       100% {
+           transform: rotate(360deg);
+       }
+   }
+
+
+   .wrapper {
+       position: relative;
+   }
